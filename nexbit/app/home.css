@@ -1,0 +1,123 @@
+.hero{
+    background: radial-gradient(ellipse at 50% 10%, #000000 40%, #f3653f 100%);
+    background-size: 125% 125%;
+    background-repeat: no-repeat;
+    animation: hero-bg-animate 8s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate;
+    transition: background 0.5s;
+    position: relative;
+    overflow: hidden;
+    height: 20em;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 80% 80%, #f3653f55 0%, transparent 70%);
+    opacity: 0.7;
+    animation: hero-light-animate 8s linear infinite alternate;
+    pointer-events: none;
+}
+@keyframes hero-bg-animate {
+    0% {
+        background-size: 100% 100%;
+        background-position: 50% 0%;
+        filter: brightness(1) blur(0px);
+    }
+    25% {
+        background-size: 130% 110%;
+        background-position: 60% 20%;
+        filter: brightness(1.1) blur(1px);
+    }
+    50% {
+        background-size: 120% 130%;
+        background-position: 40% 60%;
+        filter: brightness(1.2) blur(2px);
+    }
+    75% {
+        background-size: 140% 120%;
+        background-position: 55% 30%;
+        filter: brightness(1.1) blur(1px);
+    }
+    100% {
+        background-size: 100% 100%;
+        background-position: 50% 0%;
+        filter: brightness(1) blur(0px);
+    }
+}
+@keyframes hero-light-animate {
+    0% {
+        opacity: 0.7;
+        transform: scale(1) translate(0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2) translate(-10px, -10px);
+    }
+    100% {
+        opacity: 0.7;
+        transform: scale(1) translate(0, 0);
+    }
+}
+
+.hero img{
+    animation:rotate 15s linear infinite;
+}
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}    
+}
+
+.card,section{
+ animation:slide4 linear reverse;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+.card{
+    background-color: #101010;
+    clip-path: rect();
+}
+
+
+@keyframes slide4 {
+  to{
+    filter: blur(10px);
+    opacity: 50%;
+    transform: scale(50%);
+  } 
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 2.5rem;
+    width: 100%;
+    backdrop-filter: blur(16px);
+    color: #fff;
+    z-index: 100;
+    font-family: 'SF Pro Display', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.1rem;
+    transition: box-shadow 0.3s;
+}
+.nav:hover{
+  justify-content: space-around;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.4rem 1.2rem;
+    border-radius: 1.2rem;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.nav a:hover, .nav a:focus {
+    color: #f3653f;
+}
