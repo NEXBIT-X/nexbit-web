@@ -3,6 +3,7 @@
   import './home.css'
   import Link from "next/link";
   import { useState } from 'react';
+  import Image from 'next/image';
 
   const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,7 @@
     return (
       <nav className='nav fixed top-0 left-0 right-0 z-50  backdrop-blur-sm  '>
         <div className='container mx-auto px-4 py-3 flex justify-between items-center'>
-          <div className='text-white font-bold text-xl'>NEXBIT</div>
+          <div className='text-white font-bold text-xl leading-4'>NEX<br></br>BIT</div>
           
           {/* Desktop Menu */}
           <div className='hidden md:flex gap-6 lg:gap-8'>
@@ -91,7 +92,7 @@
         name: "LAKSHMI NARAYANAN B",
         role: "Fullstack Developer",
         image: "./team/ln.jpg",
-        link:"",
+        link:"https://blakshminarayanan.netlify.app/",
         linkedin:"https://www.linkedin.com/in/b-lakshmi-narayanan/",
         github:"https://github.com/lakshmi22-2007"
       },
@@ -144,9 +145,9 @@
 
     const teamMembers = team.map((member, index) => (
       <div key={index} className="card rounded-xl p-4 sm:p-6 lg:p-8 flex flex-col items-center backdrop-blur-sm  transition-all duration-300 hover:scale-105">
-        <img 
-          src={member.image} 
-          className="w-24 h-24 p-1 rounded-full  " 
+        <img
+          src={member.image}
+          className="w-24 h-24 p-1 rounded-full"
           alt={member.name}
         />
         <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-center text-white">{member.name}</h2>
@@ -154,15 +155,45 @@
         <hr className="w-full mt-2 sm:mt-3 border-gray-700"/>
         <br />
         <div className='flex text-white gap-2'>
-          <Link href={member.link} className='fa-solid fa-link'></Link>
-          <Link href={member.linkedin} className='fa-brands fa-linkedin'></Link>
-          <Link href={member.github} className="fa-brands fa-github"></Link>
+          {member.link && (
+            <a 
+              href={member.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-blue-400 transition-colors"
+              aria-label={`Visit ${member.name}'s website`}
+            >
+              <i className='fa-solid fa-link' aria-hidden="true"></i>
+            </a>
+          )}
+          {member.linkedin && (
+            <a 
+              href={member.linkedin} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-blue-400 transition-colors"
+              aria-label={`Visit ${member.name}'s LinkedIn profile`}
+            >
+              <i className='fa-brands fa-linkedin' aria-hidden="true"></i>
+            </a>
+          )}
+          {member.github && (
+            <a 
+              href={member.github} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-blue-400 transition-colors"
+              aria-label={`Visit ${member.name}'s GitHub profile`}
+            >
+              <i className="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+          )}
         </div>
       </div>
     ));
     const Projects = Project.map((p, index) => (
       <div key={index} className="card  backdrop-blur-sm transition-all duration-300 hover:scale-105 rounded-xl overflow-hidden">
-        <img 
+        <img
           src={p.image} 
           className="w-full h-32 sm:h-40 md:h-48 lg:h-56 object-cover" 
           alt={p.name}
@@ -208,7 +239,7 @@
           <section className="px-4 sm:px-6 lg:px-8 mb-8 sm:mb-12 md:mb-16">
             <div className="max-w-7xl mx-auto">
               <div className="hero rounded-2xl overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 p-1">
-                <img height="100%" width="100%" src="./hero.svg"/>
+                <img height="100%" width="100%"  alt='nexbit' src="./hero.svg"/>
               </div>
             </div>
           </section>
@@ -249,12 +280,9 @@
           </section>
             
           {/* Footer */}
-          <footer className='card '>
-    
-                <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-white">
-                  NEXBIT
-                </h1>
-        
+          <footer className='font-bold text-white'>
+            <Image width="7892" height="1073" alt="footer" src="foot.svg"></Image>
+            
           </footer>
         </div>
     );

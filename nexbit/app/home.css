@@ -75,7 +75,6 @@
 
 .card{
     background-color: #101010;
-    clip-path: rect();
 }
 
 
@@ -120,4 +119,15 @@
 
 .nav a:hover, .nav a:focus {
     color: #f3653f;
+}
+
+
+footer img {
+    filter: opacity(0.05);
+}
+
+footer{
+    overflow: hidden;
+    margin: 0%;
+    padding:0%;
 }
