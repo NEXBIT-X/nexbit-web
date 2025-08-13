@@ -107,7 +107,7 @@
         name: "DEV NARAYANAN",
         role: "Software Developer",
         image: "./team/dev.gif",
-        link:"",
+        link:"https://linktr.ee/devnarayanan0",
         linkedin:"https://www.linkedin.com/in/devnarayanan0/",
         github:"https://github.com/devnarayanan0"
       }
