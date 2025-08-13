@@ -88,7 +88,7 @@
         github:"https://github.com/ABHIJEETH-V-N"
       },
       {
-        name: "B LAKSHMI NARAYANAN",
+        name: "LAKSHMI NARAYANAN B",
         role: "Fullstack Developer",
         image: "./team/ln.jpg",
         link:"",
@@ -104,12 +104,20 @@
         github:"https://github.com/Pavan03062006"
       },
       {
-        name: "DEV NARAYANAN",
+        name: "DEV NARAYANAN M",
         role: "Software Developer",
         image: "./team/dev.gif",
         link:"https://linktr.ee/devnarayanan0",
         linkedin:"https://www.linkedin.com/in/devnarayanan0/",
         github:"https://github.com/devnarayanan0"
+      },
+      {
+        name: "ASWANTH B",
+        role: "Software Developer",
+        image: "./team/dev.gif",
+        link:"",
+        linkedin:"https://www.linkedin.com/in/aswanth-bathmakumar-400aa4241/",
+        github:"https://github.com/Ashy-it24"
       }
     ];
     const Project=[
