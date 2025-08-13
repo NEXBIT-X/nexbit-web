@@ -114,7 +114,7 @@
       {
         name: "ASWANTH B",
         role: "Software Developer",
-        image: "./team/dev.gif",
+        image: "./team/ash.png",
         link:"",
         linkedin:"https://www.linkedin.com/in/aswanth-bathmakumar-400aa4241/",
         github:"https://github.com/Ashy-it24"
