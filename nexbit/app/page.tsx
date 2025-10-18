@@ -134,13 +134,6 @@
         tag:"AI",
         image:"https://raw.githubusercontent.com/NEXBIT-X/.github/4d74b40293655ef6ccef4806e5d902016440240c/es.svg"
       },
-      {
-        name:"G8",
-        description:"Comprehensive test platform for conducting gate mock tests",
-        tag:"Education",
-        image:"./projects/g8.svg"
-      },
-
     ]
 
     const teamMembers = team.map((member, index) => (
@@ -230,7 +223,7 @@
               </h1>
               <hr className="border-gray-800 mb-4 sm:mb-6 md:mb-8"/>
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-200 max-w-4xl mb-6 sm:mb-8 md:mb-12">
-                Opensource + Hackathon Community 
+                HACKATHON TEAM
               </p>
             </div>
           </div>
@@ -257,7 +250,7 @@
           <section id="Team" className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-32">
             <div className="max-w-7xl mx-auto">
               <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold mb-6 sm:mb-8'>
-                THE MINDS BEHIND NEXBIT™
+                THE MINDS BEHIND NEXBIT
               </h1>
               <hr className="border-gray-800 mb-8 sm:mb-12"/>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
