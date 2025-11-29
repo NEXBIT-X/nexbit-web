@@ -119,7 +119,16 @@
         link:"",
         linkedin:"https://www.linkedin.com/in/aswanth-bathmakumar-400aa4241/",
         github:"https://github.com/Ashy-it24"
-      }
+      },
+      {
+        name: "KISHOR J",
+        role: "Software Developer",
+        image: "https://avatars.githubusercontent.com/u/181958763?v=4",
+        link:"https://kishor-portfolio-nu.vercel.app/",
+        linkedin:"https://www.linkedin.com/in/kishor-j-9b6937327/",
+        github:"https://github.com/kishorit-29"
+      },
+      
     ];
     const Project=[
       {
